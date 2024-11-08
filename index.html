@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drag and Drop Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="toolbar">
+      <div class="element" draggable="true" data-type="text">Text</div>
+      <div class="element" draggable="true" data-type="image">Image</div>
+      <div class="element" draggable="true" data-type="button">Button</div>
+    </div>
+    <div class="dropzone" id="dropzone">Drop elements here</div>
+    <div class="properties" id="properties">
+      <h3>Edit Properties</h3>
+      <form id="properties-form">
+        <label for="content">Content:</label>
+        <input type="text" id="content" name="content">
+        <button type="submit">Update</button>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
